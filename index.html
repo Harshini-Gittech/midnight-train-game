@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Train Mystery Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div class="game-header fade-in">
+      <h1>🔒 Midnight Train: Escape</h1>
+      <p>Type commands to investigate, decode, and escape the locked compartment.</p>
+    </div>
+
+    <div id="game-text" class="panel slide-up"></div>
+
+    <div class="input-row slide-up">
+      <input id="command-input" type="text" placeholder='Try "look", "examine phone", "take phone"...'>
+      <button id="submit-btn">Enter</button>
+    </div>
+
+    <div class="status-row fade-in">
+      <div class="status-box" id="hint-box">
+        <h2>Hint</h2>
+        <p>Use <strong>look</strong> to see your surroundings. Use <strong>clues</strong> if stuck.</p>
+      </div>
+      <div class="status-box" id="footer-note">
+        <h2>Compartment Log</h2>
+        <p>Every choice echoes in the silence of the train.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio files (place these in the same folder as this HTML file) -->
+  <audio id="bg-music" src="bg-music.mp3" loop></audio>
+  <audio id="click-sound" src="click.mp3"></audio>
+  <audio id="unlock-sound" src="unlock.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
